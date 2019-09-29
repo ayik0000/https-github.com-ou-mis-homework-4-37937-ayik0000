@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Problem2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ListBox x:Name="Breed_Name" HorizontalAlignment="Left" Height="242" Margin="463,39,0,0" VerticalAlignment="Top" Width="201"/>
-        <Button x:Name="Enter_Button" Content="Display Image" HorizontalAlignment="Left" Margin="91,39,0,0" VerticalAlignment="Top" Width="149" Height="40" Click="Enter_Button_Click"/>
+        Title="MainWindow" Height="450" Width="495.2">
+    <Grid Margin="0,0,3.8,0">
+        <Button x:Name="Enter_Button" Content="Display Image" HorizontalAlignment="Left" Margin="249,81,0,0" VerticalAlignment="Top" Width="149" Height="40" Click="Enter_Button_Click"/>
+        <TextBox x:Name="dogName" HorizontalAlignment="Left" Height="37" Margin="34,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Image x:Name="dogImage" HorizontalAlignment="Left" Height="243" Margin="34,143,0,0" VerticalAlignment="Top" Width="265"/>
 
     </Grid>
 </Window>

@@ -2,7 +2,7 @@
 
 namespace Problem2
 {
-    internal class Webclient : IDisposable
+    internal class Webclient
     {
     }
 }

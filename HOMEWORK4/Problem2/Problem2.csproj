@@ -58,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DogApiInstance.cs" />
     <Compile Include="Dog_Breed.cs" />
     <Compile Include="Webclient.cs" />
     <Page Include="MainWindow.xaml">
