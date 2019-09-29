@@ -30,9 +30,9 @@ namespace Problem1
             listPerson.Add(person2);
 
             JavascriptSerializer javascriptSerializer = new JavascriptSerializer();
-            string jsonstring = javascriptSerializer.Serialize(listPerson);
+            javascriptSerializer.Serialize(listPerson);
 
-            Console.Write(jsonstring);
+            
             
 
 
