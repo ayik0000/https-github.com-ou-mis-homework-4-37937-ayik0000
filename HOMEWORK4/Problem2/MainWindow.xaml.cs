@@ -28,7 +28,19 @@ namespace Problem2
         private void Enter_Button_Click(object sender, RoutedEventArgs e)
         {
 
-            string userInput;
+            
+            string Name;
+
+            Console.WriteLine("Please enter a dog breed");
+            string userInput = Console.ReadLine();
+
+            List<Dog_Breed> dog_Breeds = new List<Dog_Breed>();
+            {
+                if(userInput != "Dog_Breed")
+                {
+                    Console.WriteLine($"Invalid breed name !! Please enter correct breed name");
+                }
+            }
 
 
             

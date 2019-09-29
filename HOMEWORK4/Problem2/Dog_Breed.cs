@@ -11,11 +11,11 @@ namespace Problem2
 
         public class Rootobject
         {
-            public BreedName message { get; set; }
+            public Name message { get; set; }
             public string status { get; set; }
         }
 
-        public class BreedName
+        public class Name
         {
             public object[] affenpinscher { get; set; }
             public object[] african { get; set; }
