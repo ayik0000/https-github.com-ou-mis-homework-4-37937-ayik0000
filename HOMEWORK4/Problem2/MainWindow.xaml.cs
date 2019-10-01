@@ -31,18 +31,10 @@ namespace Problem2
         {
 
 
-            string userURL = $"https://dog.ceo/api/breed/{dogName.Text}/images/random";
+            string userURL =$"https://dog.ceo/api/breeds/image/random";
 
-
-
-            if (dogName.Text != dogName.Text.Split(' ')[0])
-            {
-                userURL = $"https://dog.ceo/api/breed/{dogName.Text.Split(' ')[1]}-{dogName.Text.Split(' ')[0]}/images/random";
-            }
 
             
-
-
             using (HttpClient http = new HttpClient())
             {
                 var response = http.GetAsync(userURL).Result;
