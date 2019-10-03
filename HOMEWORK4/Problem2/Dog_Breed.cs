@@ -8,14 +8,11 @@ namespace Problem2
 {
     class Dog_Breed
     {
+        
+            public string message { get; set; }
 
-        public class Rootobject
-        {
-            public Uri message { get; set; }
             public string status { get; set; }
-        }
-
-       
+        
 
     }
 }

@@ -12,25 +12,25 @@ namespace Problem1
         static void Main(string[] args)
         {
 
-            Person person = new Person
-            {
-                Name = "Walder",
-                Alias = "Hodor",
-                Alliance = "House Stark",
+           // Person person = new Person
+           // {
+           //     Name = "Walder",
+           //     Alias = "Hodor",
+            //    Alliance = "House Stark",
 
-            };
-            Person person2 = new Person
+           // };
+           // Person person2 = new Person
             {
-                Name = "Margaery Tyrell",
-                Alias = "The Little Queen, the Little Rose,Maid Margaery",
-                Alliance = "House Tyrell",
+           //     Name = "Margaery Tyrell",
+           //     Alias = "The Little Queen, the Little Rose,Maid Margaery",
+           //     Alliance = "House Tyrell",
             };
-            List<Person> listPerson = new List<Person>();
-            listPerson.Add(person);
-            listPerson.Add(person2);
+           // List<Person> listPerson = new List<Person>();
+           // listPerson.Add(person);
+           // listPerson.Add(person2);
 
-            JavascriptSerializer javascriptSerializer = new JavascriptSerializer();
-            javascriptSerializer.Serialize(listPerson);
+           // JavascriptSerializer javascriptSerializer = new JavascriptSerializer();
+           // javascriptSerializer.Serialize(listPerson);
 
             
             

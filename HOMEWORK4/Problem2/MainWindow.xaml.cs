@@ -31,25 +31,32 @@ namespace Problem2
         {
 
 
-            string userURL =$"https://dog.ceo/api/breeds/image/random";
-
-
+            //string url = ($"https://https://dog.ceo/api/breed/{txtbreed.Text}/images/random");
             
+
+            //creating http client
             using (HttpClient http = new HttpClient())
             {
-                var response = http.GetAsync(userURL).Result;
+                var response = http.GetAsync($"https://dog.ceo/api/breed/{txtbreed.Text}/images/random").Result;
                 if (response.IsSuccessStatusCode)
                 {
                     var content = response.Content.ReadAsStringAsync().Result;
-                    DogApiInstance dog = JsonConvert.DeserializeObject<DogApiInstance>(content);
+                    var result = JsonConvert.DeserializeObject<Dog_Breed>(content);
 
-                    dogImage.Source = new BitmapImage(dog.message);
+                    var image = new BitmapImage();
+                    image.BeginInit();
+                    image.UriSource = new Uri(result.message);
+                    image.EndInit();
+
+                    //Return dog image
+                    dogImage.Source = image;
 
                 }
+                //return when name is invalid
                 else
                 {
                     MessageBox.Show("Invalid Name");
-                    dogName.Clear();
+                    txtbreed.Clear();
                 }
                 
 

@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="495.2">
     <Grid Margin="0,0,3.8,0">
         <Button x:Name="Enter_Button" Content="Display Image" HorizontalAlignment="Left" Margin="249,81,0,0" VerticalAlignment="Top" Width="149" Height="40" Click="Enter_Button_Click"/>
-        <TextBox x:Name="dogName" HorizontalAlignment="Left" Height="37" Margin="34,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="txtbreed" HorizontalAlignment="Left" Height="37" Margin="34,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
         <Image x:Name="dogImage" HorizontalAlignment="Left" Height="243" Margin="34,143,0,0" VerticalAlignment="Top" Width="265"/>
 
     </Grid>
